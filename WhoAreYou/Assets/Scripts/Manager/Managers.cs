@@ -17,7 +17,7 @@ public class Managers : MonoBehaviour
 
     void Update()
     {
-        
+        Input.OnUpdate();
     }
 
     static void Init()
