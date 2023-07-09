@@ -7,8 +7,8 @@ public class Managers : MonoBehaviour
     static Managers ManagerInstance { get { Init(); return _managerInstance; } }
 
     // 갖가지 매니저들의 인스턴스
-    static InputManager _input;
-    static InputManager Input { get { return _input; } }
+    private static InputManager _input = new InputManager();
+    public static InputManager Input { get { return _input; } }
 
     void Awake()
     {
